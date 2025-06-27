@@ -1,5 +1,8 @@
 import React from 'react';
 import CategorySection from './Layouts/CategorySection';
+import PromotionalSection from './Layouts/PromotionalSection';
+import BlogSection from './Layouts/BlogSection';
+import NewsletterSection from './Layouts/NewsletterSection';
 
 const Banner = () => {
     return (
@@ -99,6 +102,9 @@ const Banner = () => {
                 </div>
             </section>
             <CategorySection></CategorySection>
+            <PromotionalSection></PromotionalSection>
+            <BlogSection></BlogSection>
+            <NewsletterSection></NewsletterSection>
         </div>
 
 
