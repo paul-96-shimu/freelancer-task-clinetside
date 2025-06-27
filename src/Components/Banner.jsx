@@ -1,4 +1,5 @@
 import React from 'react';
+import CategorySection from './Layouts/CategorySection';
 
 const Banner = () => {
     return (
@@ -6,11 +7,14 @@ const Banner = () => {
 
         <div>
             {/* Carousel Section */}
-            <section className="carousel w-full">
+
+            <section className="carousel w-full h-[70vh] overflow-hidden">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img
                         src="https://i.ibb.co/wZbtq5fv/freelancer3.jpg"
-                        className="w-full object-cover h-[500px]" />
+                        className="w-full h-full object-cover"
+                        alt="Slide 1"
+                    />
                     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
                         <a href="#slide4" className="btn btn-circle">❮</a>
                         <a href="#slide2" className="btn btn-circle">❯</a>
@@ -19,7 +23,9 @@ const Banner = () => {
                 <div id="slide2" className="carousel-item relative w-full">
                     <img
                         src="https://i.ibb.co/JRWk04jP/freelancer2.jpg"
-                        className="w-full object-cover h-[500px]" />
+                        className="w-full h-full object-cover"
+                        alt="Slide 2"
+                    />
                     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
                         <a href="#slide1" className="btn btn-circle">❮</a>
                         <a href="#slide3" className="btn btn-circle">❯</a>
@@ -28,7 +34,9 @@ const Banner = () => {
                 <div id="slide3" className="carousel-item relative w-full">
                     <img
                         src="https://i.ibb.co/wrjjWL1S/freelancer1.jpg"
-                        className="w-full object-cover h-[500px]" />
+                        className="w-full h-full object-cover"
+                        alt="Slide 3"
+                    />
                     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
                         <a href="#slide2" className="btn btn-circle">❮</a>
                         <a href="#slide4" className="btn btn-circle">❯</a>
@@ -37,7 +45,9 @@ const Banner = () => {
                 <div id="slide4" className="carousel-item relative w-full">
                     <img
                         src="https://i.ibb.co/SwpZWY68/freelancer4.jpg"
-                        className="w-full object-cover h-[500px]" />
+                        className="w-full h-full object-cover"
+                        alt="Slide 4"
+                    />
                     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
                         <a href="#slide3" className="btn btn-circle">❮</a>
                         <a href="#slide1" className="btn btn-circle">❯</a>
@@ -88,7 +98,12 @@ const Banner = () => {
                     </div>
                 </div>
             </section>
+            <CategorySection></CategorySection>
         </div>
+
+
+
+
 
     );
 };
