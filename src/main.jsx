@@ -18,6 +18,7 @@ import TaskDetails from './Components/TaskDetails.jsx';
 import MyPostedTask from './Components/MyPostedTask.jsx';
 import ErrorPage from './Components/ErrorPage.jsx';
 import PrivateRoutes from './PrivateRoutes/PrivateRoutes.jsx';
+import AboutUs from './Pages/AboutUs.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -75,6 +76,10 @@ const router = createBrowserRouter([
       {
         path: "register",
         Component: Register
+      },
+      {
+        path: "aboutus",
+        Component: AboutUs
       },
     ]
   },

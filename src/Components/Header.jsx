@@ -140,10 +140,11 @@ const Header = () => {
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-center space-x-6">
                     <NavLink to="/" className={navLinkClass}>Home</NavLink>
-                    <NavLink to="/browsertask" className={navLinkClass}>All Items</NavLink>
-                    <NavLink to="/about" className={navLinkClass}>About</NavLink>
-                    <NavLink to="/contact" className={navLinkClass}>Contact</NavLink>
-                    <NavLink to="/support" className={navLinkClass}>Support</NavLink>
+                    <NavLink to="/aboutus" className={navLinkClass}>About Us</NavLink>
+                    <NavLink to="/contactus" className={navLinkClass}>Contact Us</NavLink>
+                    <NavLink to="/addtask" className={navLinkClass}>Add Task</NavLink>
+                    <NavLink to="/browsertask" className={navLinkClass}>Browse Tasks</NavLink>
+                    <NavLink to={`/mypostedtasks/${user?.email}`} className={navLinkClass}>My Posted Tasks</NavLink>
 
                     {user ? (
                         <div className="flex items-center gap-3 relative group">
