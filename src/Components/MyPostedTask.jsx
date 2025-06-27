@@ -10,7 +10,7 @@ const MyPostedTask = () => {
     const { user } = useContext(AuthContext);
     const [tasks, setTasks] = useState([]);
     const [showModal, setShowModal] = useState(false);
-    const [selectedTask, setSelectedTask] = useState(null); // ⭐ To store clicked task
+    const [selectedTask, setSelectedTask] = useState(null);
 
     useEffect(() => {
         if (user?.email) {
